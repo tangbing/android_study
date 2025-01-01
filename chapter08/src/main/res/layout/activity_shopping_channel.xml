@@ -11,16 +11,10 @@
 
     <include layout="@layout/title_shopping"/>
 
-    <ScrollView
+    <GridView
+        android:id="@+id/gd_channel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <GridLayout
-            android:id="@+id/gl_channel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"/>
-
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:numColumns="2" />
 
 </LinearLayout>
