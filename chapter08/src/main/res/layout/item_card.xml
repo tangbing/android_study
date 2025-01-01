@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/xiaomi"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/iv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小米手机"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/iv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="小米手机小米手机小米手机小米手机小米手机"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/iv_count"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        tools:text="2"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/iv_price"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center|right"
+        android:layout_height="wrap_content"
+        tools:text="1000"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/iv_totalPrice"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center|right"
+        android:layout_height="match_parent"
+        tools:text="2000"
+        android:textColor="@color/red"
+        android:textSize="15sp"/>
+
+
+</LinearLayout>

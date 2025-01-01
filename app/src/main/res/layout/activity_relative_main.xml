@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".relative_MainActivity">
+
+        <TextView
+            android:id="@+id/tv_center_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="center in view"
+            />
+
+        <TextView
+            android:layout_below="@id/tv_center_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center bottom view"/>
+
+        <Button
+            android:id="@+id/button_showTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_center_parent"
+            android:layout_margin="40dp"
+            android:onClick="showTime"
+            android:text="显示时间按钮"
+            />
+
+        <Button
+            android:id="@+id/button_setOnclickListener_showTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button_showTime"
+            android:layout_margin="40dp"
+            android:text="setOnclickListener按钮点击事件显示时间按钮"
+            />
+
+        <Button
+            android:id="@+id/button_publish_showTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/button_setOnclickListener_showTime"
+            android:layout_margin="40dp"
+            android:onClick="showTime"
+            android:text="publish点击按钮事件显示时间按钮"
+            />
+
+        <TextView
+            android:id="@+id/tv_showTime"
+            android:layout_below="@id/button_publish_showTime"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show current time"/>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_showTime"
+            android:layout_margin="40dp"
+            android:onClick="backPage"
+            android:text="back"
+            />
+
+    </RelativeLayout>
+</ScrollView>
+
