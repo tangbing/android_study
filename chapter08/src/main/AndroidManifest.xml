@@ -10,17 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Intent_demo">
         <activity
-            android:name=".GridviewActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".ShoppingChannelActivity"
+            android:name=".LacunchImproveActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FragmentDynamicActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".FragmentStatic2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".PagerTabActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShoppingChannelActivity"
+            android:exported="true" />
         <activity android:name=".ShoppingCartActivity" />
         <activity android:name=".ShoppingDetailActivity" />
     </application>
