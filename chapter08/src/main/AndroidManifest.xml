@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Intent_demo">
         <activity
-            android:name=".LacunchImproveActivity"
+            android:name=".BillPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillAddActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +22,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".LacunchImproveActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".FragmentDynamicActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".FragmentStatic2Activity"
             android:exported="true" />
